@@ -2,7 +2,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700;800;900&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Nunito:wght@200;300;400;500;600&family=Odibee+Sans&family=Open+Sans:wght@300;400;700&family=Oswald:wght@200;300;400&family=Philosopher:ital,wght@0,400;0,700;1,700&display=swap");
 /* ------------------------------ Global variables ------------------------------ */
 :root {
-  --black: #333;
+  --black: #333333;
   --white: #fff;
   --box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
 }
@@ -66,10 +66,7 @@ section {
 /* ------------------------------ Countdown & Header container ------------------------------ */
 
 .countdown-header-container {
-  background: linear-gradient(90deg, var(--white), transparent 0%),
-    url(/Source/Background\ color.png) no-repeat;
-  background-size: cover;
-  background-position: center;
+  background: url(/Source/Background\ color.png);
   background-size: 100% 102%;
   box-shadow: var(--box-shadow);
   -webkit-animation: text-focus-in 0.75s cubic-bezier(0.55, 0.085, 0.68, 0.53)
@@ -139,12 +136,14 @@ nav.navbar {
   font-size: 45px;
   font-weight: 400;
   text-align: left;
+  color: var(--black);
 }
 
 .countdown-section .countdown-content p {
   line-height: 25.6px;
   margin-top: 26px;
   text-align: left;
+  color: var(--black);
 }
 
 .spots-available {
@@ -255,6 +254,7 @@ nav.navbar {
   font-size: clamp(1rem, 2.5vw, 2.5rem);
   font-weight: 500;
   margin-top: 22px;
+  color: var(--black);
 }
 
 .icon-box h4 {
@@ -262,6 +262,7 @@ nav.navbar {
   line-height: 28.51px;
   margin-bottom: 32px;
   margin-top: 36px;
+  color: var(--black);
 }
 
 .icon-box span {
@@ -374,6 +375,7 @@ nav.navbar {
   padding-bottom: 20px;
   padding-top: 89px;
   text-align: center;
+  color: var(--black);
 }
 
 .help-section p {
@@ -381,6 +383,7 @@ nav.navbar {
   font-weight: 400;
   line-height: 25.6px;
   text-align: center;
+  color: var(--black);
 }
 
 .help-section .first-p {
@@ -424,6 +427,7 @@ nav.navbar {
   font-weight: 400;
   padding-bottom: 64px;
   text-align: center;
+  color: var(--black);
 }
 
 .free-consultation-section {
@@ -448,6 +452,7 @@ nav.navbar {
   font-size: 16px;
   line-height: 27.6px;
   padding-bottom: 20px;
+  color: var(--black);
 }
 
 .boxes-container li::marker {
@@ -532,6 +537,7 @@ nav.navbar {
   font-family: "Libre Baskerville", serif;
   font-size: 32px;
   padding-bottom: 67px;
+  color: var(--black);
 }
 
 .button-img {
@@ -650,6 +656,7 @@ nav.navbar {
   font-size: 16px;
   line-height: 25.6px;
   padding-bottom: 45px;
+  color: var(--black);
 }
 
 .location {
@@ -738,9 +745,9 @@ nav.navbar {
     padding: 0 40px;
   }
 
-  .header {
+  /* .header {
     background-color: white;
-  }
+  } */
 
   .header .header-section {
     padding: 0 40px;
@@ -779,6 +786,16 @@ nav.navbar {
   }
 
   /* Countdown */
+
+  .countdown-header-container {
+    background: transparent;
+  }
+
+  .bg-img-resp {
+    background: url(/Source/responsive-rectangle.png) no-repeat;
+    background-size: 50% 100%;
+    background-position-x: right;
+  }
 
   .countdown-container {
     align-items: center;
@@ -1123,6 +1140,12 @@ nav.navbar {
 
   .header {
     background-color: transparent;
+  }
+
+  .countdown-header-container {
+    background: url(/Source/responsive-rectangle.png) no-repeat;
+    background-size: 50% 100%;
+    background-position-x: right;
   }
 
   .countdown-section .countdown-content h1 {

@@ -1,6 +1,5 @@
-/* Countdown function */
+/* Countdown */
 const getCurrentYear = new Date().getFullYear();
-
 const wantedTime = new Date(`January 31 ${getCurrentYear} 00:00:00`);
 
 const countdownUpdate = () => {
@@ -20,7 +19,7 @@ const countdownUpdate = () => {
 
 setInterval(countdownUpdate, 1000);
 
-/* Dropdown function */
+/* Dropdown */
 document.addEventListener("DOMContentLoaded", function () {
   const buttons = document.querySelectorAll(".drop-down");
 
