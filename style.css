@@ -108,6 +108,12 @@ nav.navbar {
   height: 62.09px;
 }
 
+#img-stat-position {
+  position: fixed;
+  top: 25%;
+  left: 5%;
+}
+
 /* ------------------------------ Countdown content ------------------------------ */
 
 .countdown-container {
